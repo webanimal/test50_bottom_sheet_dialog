@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">BottomSheetDialog app</string>
+
+    <!-- Main fragment -->
+    <string name="main_header_text">Hello world!</string>
+    <!-- Main fragment -->
+
+</resources>
