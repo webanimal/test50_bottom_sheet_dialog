@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layBsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_top_rounded_white_back"
+    tools:showIn="@layout/fragment_main"
+    >
+
+    <View
+        android:id="@+id/vBsShade"
+        android:layout_width="@dimen/bottom_sheet_dialog_shade_width"
+        android:layout_height="@dimen/bottom_sheet_dialog_shade_height"
+        android:layout_marginTop="@dimen/space_4dp"
+        android:background="@drawable/shape_bottom_sheet_dialog_shade_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/llShowSearchItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bottom_sheet_dialog_content_top_margin"
+        android:padding="@dimen/space_4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@+id/vBsShade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/tvShowSearchItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_4dp"
+            android:layout_gravity="center_vertical|start"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+            android:text="@string/main_bs_swt_show_search_item_text"
+            android:layout_weight="1"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtShowSearchItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_4dp"
+            android:layout_gravity="center_vertical|end"
+            android:clickable="false"
+            android:focusable="false"
+            android:checked="false"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivBsContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8dp"
+        android:src="@drawable/img_unicorn"
+        app:layout_constraintTop_toBottomOf="@+id/llShowSearchItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

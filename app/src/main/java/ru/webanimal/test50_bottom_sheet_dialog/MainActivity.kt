@@ -2,6 +2,7 @@ package ru.webanimal.test50_bottom_sheet_dialog
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ru.webanimal.test50_bottom_sheet_dialog.main_feature.MainFragment
 
 class MainActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {

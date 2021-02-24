@@ -3,7 +3,10 @@
     <string name="app_name">BottomSheetDialog app</string>
 
     <!-- Main fragment -->
-    <string name="main_header_text">Hello world!</string>
+    <string name="main_behavior_state_title">BS Behavior state:</string>
+    <string name="main_behavior_state_text_undefined">Undefined</string>
+    <string name="main_fab_add_account_description">Button "add new account"</string>
+    <string name="main_bs_swt_show_search_item_text">Show search item:</string>
     <!-- Main fragment -->
 
 </resources>
